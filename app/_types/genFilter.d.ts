@@ -1,0 +1,3 @@
+interface FilterTypes {
+  name: string;
+}

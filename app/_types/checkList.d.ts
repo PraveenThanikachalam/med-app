@@ -1,0 +1,3 @@
+interface checkList {
+  name: string;
+}
