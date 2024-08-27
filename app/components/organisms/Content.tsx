@@ -43,7 +43,7 @@ export default function Content() {
       <div
         className={`${
           filterButton ? "flex " : "hidden "
-        } justify-center px-4 lg:px-0 lg:w-[250px] lg:flex flex-col gap-y-[30px] lg:h-[1322px]`}
+        } justify-center md:absolute lg:relative z-10 bg-white/90 lg:justify-start px-4 lg:px-0 md:w-[400px] lg:w-[250px] lg:flex flex-col gap-y-[30px] lg:h-[1322px]`}
       >
         <p className="hidden text-[24px] lg:flex justify-center w-full bg-[#62C3C6]/10 text-[#045A5C] font-semibold rounded-sm">
           Filter
