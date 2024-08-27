@@ -33,17 +33,17 @@ export default function Content() {
   const [isClicked, setClicked] = useState(false);
   const [filterButton, setFilterButton] = useState(false);
   return (
-    <div className="w-full flex-col lg:flex-row lg:flex flex-grow justify-between lg:px-0 px-4 pt-2 lg:pt-[64px]">
+    <div className="w-full relative flex-col lg:flex-row lg:flex flex-grow justify-between lg:px-0 px-4 pt-2 lg:pt-[64px]">
       <button
         onClick={() => setFilterButton(!filterButton)}
-        className="text-[24px] lg:hidden mb-1 flex items-start justify-center w-full bg-[#62C3C6]/10 text-[#045A5C] font-semibold rounded-sm"
+        className="text-[24px] lg:hidden mb-1 flex md:mt-2 items-start justify-center w-full bg-[#62C3C6]/10 text-[#045A5C] font-semibold rounded-sm"
       >
         Filter
       </button>
       <div
         className={`${
           filterButton ? "flex " : "hidden "
-        } justify-center md:absolute lg:relative z-10 bg-white/90 lg:justify-start px-4 lg:px-0 md:w-[400px] lg:w-[250px] lg:flex flex-col gap-y-[30px] lg:h-[1322px]`}
+        } justify-center md:absolute lg:p-0 md:p-4 md:rounded-2xl lg:border-none md:border-primary md:border-2 lg:relative z-10 bg-white/90 lg:justify-start px-4 lg:px-0 md:w-[400px] lg:w-[250px] lg:flex flex-col gap-y-[30px] lg:h-[1322px]`}
       >
         <p className="hidden text-[24px] lg:flex justify-center w-full bg-[#62C3C6]/10 text-[#045A5C] font-semibold rounded-sm">
           Filter
@@ -107,7 +107,7 @@ export default function Content() {
         </div>
       </div>
       <div className="lg:w-[970px] flex flex-col h-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 items-center justify-center lg:justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-2 sp:grid-cols-3 w-full gap-4 items-center justify-center lg:justify-between">
           <MedCard mid={""} />
           <MedCard mid={""} />
           <MedCard mid={""} />

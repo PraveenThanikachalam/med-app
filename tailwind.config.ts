@@ -18,6 +18,8 @@ const config: Config = {
         secondary: "#116A6C",
       },
       screens: {
+        md: "655px",
+        sp: "1000px",
         lg: "1350px",
       },
     },

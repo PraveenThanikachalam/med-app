@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex mt-[40px]">
+      <div className="flex md:gap-x-16 lg:gap-x-0 mt-[40px]">
         <div className="flex flex-col gap-y-3 ml-[20px] lg:ml-[80px] ">
           <p className="text-white/50 text-[12px]">Standort</p>
           <p className="font-semibold text-white text-[16px] leading-5">
