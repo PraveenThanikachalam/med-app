@@ -1,6 +1,6 @@
 export default function GenFilter({ List }: { List: Array<FilterTypes> }) {
   return (
-    <div className="flex w-full justify-center gap-x-3 md:gap-x-0 lg-justify-between ">
+    <div className="flex w-full justify-center gap-x-3 lg-justify-between ">
       {List.map((item) =>
         item.name == "Indica" || item.name == "bestrahlt" ? (
           <button
